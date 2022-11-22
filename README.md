@@ -15,7 +15,7 @@ Build your package with `npm run build`. This will output the compiled package t
 
 ## Bundling
 
-Vite is installed, as it is a peer dependency of Vitest, though I use `tsup` to bundling by default, as it has a simpler interface. While Vite is a great bundler, it is only really useful for browser packages where you might want a testing page for development.
+Vite is installed, as it is a peer dependency of Vitest. I still use `tsup` to bundling by default, as it has a simpler interface. While Vite is a great bundler, it is only really useful for browser packages where you might want a testing page for development.
 
 Vite and tsup are both powered by esbuild and Rollup under the hood, so a) the added dependency overhead is minimal, and b) switching should be relatively simple and result in similar output if you want Vite's features.
 
