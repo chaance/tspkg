@@ -1,4 +1,4 @@
-<h1 align="center">ts-pkg</h1>
+<h1 align="center">tspkg</h1>
 
 A starter template for creating TypeScript packages. Pre-configured with:
 

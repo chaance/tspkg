@@ -1,5 +1,5 @@
 {
-	"name": "ts-pkg",
+	"name": "tspkg",
 	"version": "1.0.0",
 	"description": "Starter template for new TypeScript packages",
 	"main": "dist/index.js",
@@ -13,7 +13,7 @@
 	"author": "Chance Strickland <hi@chance.dev>",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/chaance/ts-pkg.git"
+		"url": "git+https://github.com/chaance/tspkg.git"
 	},
 	"license": "MIT",
 	"files": [
