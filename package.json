@@ -1,0 +1,36 @@
+{
+	"name": "ts-pkg",
+	"version": "1.0.0",
+	"description": "Starter template for new TypeScript packages",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup"
+	},
+	"author": "Chance Strickland <hi@chance.dev>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chaance/ts-pkg.git"
+	},
+	"license": "MIT",
+	"files": [
+		"dist",
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"devDependencies": {
+		"@types/node": "^18.11.9",
+		"@typescript-eslint/eslint-plugin": "^5.44.0",
+		"@typescript-eslint/parser": "^5.44.0",
+		"eslint": "^8.28.0",
+		"eslint-config-chance": "^2.0.2",
+		"eslint-import-resolver-node": "^0.3.6",
+		"eslint-import-resolver-typescript": "^3.5.2",
+		"eslint-plugin-import": "^2.26.0",
+		"prettier": "^2.7.1",
+		"tsup": "^6.5.0",
+		"typescript": "^4.9.3"
+	}
+}
