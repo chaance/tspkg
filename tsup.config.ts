@@ -1,15 +1,13 @@
-// import fs from "node:fs";
-// import path from "node:path";
 import { defineConfig } from "tsup";
 import pkgJson from "./package.json";
 
 let { name: packageName, version: packageVersion } = pkgJson;
 
-export default defineConfig((options) => {
-	let entry = ["src/index.ts"];
-	let external = ["react", "react-dom"];
-	let target = "es2019";
-	let banner = createBanner({
+export default defineConfig(() => {
+	const entry = ["src/index.ts"];
+	const external = ["react", "react-dom"];
+	const target = "es2019";
+	const banner = createBanner({
 		author: "Chance Strickland",
 		creationYear: 2022,
 		license: "MIT",
