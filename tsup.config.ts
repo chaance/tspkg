@@ -6,10 +6,10 @@ let { name: packageName, version: packageVersion } = pkgJson;
 export default defineConfig(() => {
 	const entry = ["src/index.ts"];
 	const external = ["react", "react-dom"];
-	const target = "es2019";
+	const target = "es2020";
 	const banner = createBanner({
 		author: "Chance Strickland",
-		creationYear: 2022,
+		creationYear: 2023,
 		license: "MIT",
 		packageName,
 		version: packageVersion,
