@@ -3,41 +3,28 @@ import pkgJson from "./package.json";
 
 let { name: packageName, version: packageVersion } = pkgJson;
 
-export default defineConfig(() => {
-	const entry = ["src/index.ts"];
-	const external = ["react", "react-dom"];
-	const target = "es2020";
-	const banner = createBanner({
-		author: "Chance Strickland",
-		creationYear: 2023,
-		license: "MIT",
-		packageName,
-		version: packageVersion,
-	});
-
-	return [
-		// cjs.dev.js
-		{
-			entry,
-			format: "cjs",
-			sourcemap: true,
-			external,
-			banner: { js: banner },
-			target,
-		},
-
-		// esm + d.ts
-		{
-			entry,
-			format: "esm",
-			sourcemap: true,
-			external,
-			banner: { js: banner },
-			target,
-			dts: { banner },
-		},
-	];
+const entry = ["src/index.ts"];
+const external = ["react", "react-dom"];
+const target = "es2022";
+const banner = createBanner({
+	author: "Chance Strickland",
+	creationYear: 2024,
+	license: "MIT",
+	packageName,
+	version: packageVersion,
 });
+
+export default defineConfig([
+	{
+		entry,
+		format: "esm",
+		sourcemap: true,
+		external,
+		banner: { js: banner },
+		target,
+		dts: { banner },
+	},
+]);
 
 function createBanner({
 	packageName,
